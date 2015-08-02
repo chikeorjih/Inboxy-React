@@ -1,0 +1,9 @@
+{
+    "name" : "Inboxy",
+    "description" : "JS project for testing out frameworks",
+    "version" : "1.0.0",
+    "dependencies" : {
+    	"jquery" : "*",
+    	"react" : "*"
+    }
+}

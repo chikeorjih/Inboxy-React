@@ -1,0 +1,68 @@
+/** Resets **/
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+body{
+	background:#ffffff;
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+/** Styles **/
+html, body, #app, #nav-view, #list-view, #message-view{
+	height:100%
+}
+
+ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+
+	li{
+
+		padding:5px 20px;
+		width:100%;
+		box-sizing:border-box;
+	}
+}
+
+#app{
+	@include clearfix;
+}
+
+#nav-view{
+	background:#cfcfcf;
+	display:block;
+	float:left;
+	width:15%;
+
+	@include clearfix;
+
+	#branding{
+		margin-bottom: 20px;
+	}
+}
+
+#list-view{
+	background:#e6e6e6;
+	display:block;
+	float:left;
+	width:25%;
+
+	@include clearfix;
+}
+
+#message-view{
+	background:#ffffff;
+	display:block;
+	float:left;
+	width:60%;
+
+	@include clearfix;
+}
